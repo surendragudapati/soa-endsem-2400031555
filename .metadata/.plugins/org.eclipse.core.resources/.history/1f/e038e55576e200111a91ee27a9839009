@@ -1,0 +1,47 @@
+
+package com.soa.klef.exam.service;
+
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.soa.klef.exam.entity.User;
+import com.soa.klef.exam.repository.UserRepository;
+
+@Service
+public class AuthServiceImpl implements AuthService {
+
+    private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
+
+    public AuthServiceImpl(UserRepository userRepository,
+                           PasswordEncoder passwordEncoder) {
+        this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
+    }
+
+    @Override
+    public User registerUser(User user) {
+
+        if (userRepository.existsByEmail(user.getEmail())) {
+            throw new IllegalArgumentException("Email is already registered");
+        }
+
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+
+        return userRepository.save(user);
+    }
+
+    @Override
+    public String loginUser(String email, String password) {
+        // JWT login implementation will be added next.
+        throw new UnsupportedOperationException(
+                "Login implementation is not configured yet");
+    }
+
+    @Override
+    public boolean validateToken(String token) {
+        // JWT validation implementation will be added next.
+        throw new UnsupportedOperationException(
+                "Token validation is not configured yet");
+    }
+}

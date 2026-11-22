@@ -1,0 +1,5 @@
+package com.soa.klef.exam.service;
+
+public interface AuthService {
+
+}

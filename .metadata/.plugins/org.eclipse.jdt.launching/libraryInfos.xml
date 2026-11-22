@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="C:\Program Files\Java\jdk-17" version="17.0.12"/>
+    <libraryInfo home="C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot" version="25.0.2"/>
+    <libraryInfo home="C:\Program Files\Java\jre1.8.0_451" version="1.8.0_451">
+        <bootpath>
+            <entry path="C:\Program Files\Java\jre1.8.0_451\lib\resources.jar"/>
+            <entry path="C:\Program Files\Java\jre1.8.0_451\lib\rt.jar"/>
+            <entry path="C:\Program Files\Java\jre1.8.0_451\lib\jsse.jar"/>
+            <entry path="C:\Program Files\Java\jre1.8.0_451\lib\jce.jar"/>
+            <entry path="C:\Program Files\Java\jre1.8.0_451\lib\charsets.jar"/>
+            <entry path="C:\Program Files\Java\jre1.8.0_451\lib\jfr.jar"/>
+            <entry path="C:\Program Files\Java\jre1.8.0_451\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="C:\Program Files\Java\jre1.8.0_451\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="C:\Program Files\Java\jre1.8.0_451\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\Program Files\Java\jdk-26.0.1" version="26.0.1"/>
+    <libraryInfo home="C:\Program Files\Java\jdk-25.0.3" version="25.0.3"/>
+</libraryInfos>

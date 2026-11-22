@@ -1,0 +1,26 @@
+package com.soa.klef.exam.service;
+
+import org.springframework.stereotype.Service;
+
+import com.soa.klef.exam.entity.Login;
+
+@Service
+public class AuthServiceImpl implements AuthService {
+
+    @Override
+    public boolean validateLogin(Login login) {
+
+        String username = "admin";
+        String password = "pass123";
+
+        if (username.equals(login.getUsername()) &&
+            password.equals(login.getPassword())) {
+
+            return true;
+
+        } else {
+
+            return false;
+        }
+    }
+}

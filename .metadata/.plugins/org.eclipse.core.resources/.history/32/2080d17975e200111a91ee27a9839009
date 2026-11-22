@@ -1,0 +1,5 @@
+package com.soa.klef.exam.entity;
+
+public class User {
+
+}

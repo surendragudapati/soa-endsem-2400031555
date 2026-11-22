@@ -1,0 +1,5 @@
+package com.soa.klef.exam.repository;
+
+public interface UserRepository {
+
+}

@@ -1,0 +1,10 @@
+
+package com.soa.klef.exam.service;
+
+import com.soa.klef.exam.entity.Login;
+
+public interface AuthService {
+
+    boolean validateLogin(Login login);
+
+}

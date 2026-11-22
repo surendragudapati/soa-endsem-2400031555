@@ -1,0 +1,34 @@
+
+# ==========================================
+# APPLICATION CONFIGURATION
+# ==========================================
+spring.application.name=AuthService
+server.port=8080
+
+# ==========================================
+# MYSQL DATABASE CONFIGURATION
+# ==========================================
+spring.datasource.url=jdbc:mysql://localhost:3306/auth_db
+spring.datasource.username=root
+spring.datasource.password=root
+
+# ==========================================
+# JPA / HIBERNATE CONFIGURATION
+# ==========================================
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+# ==========================================
+# SWAGGER / OPENAPI CONFIGURATION
+# ==========================================
+springdoc.api-docs.path=/api-docss
+springdoc.swagger-ui.path=/swagger-ui.html
+springdoc.swagger-ui.enabled=true
+springdoc.api-docs.enabled=true
+
+# ==========================================
+# JWT CONFIGURATION
+# ==========================================
+jwt.secret=VGhpc0lzQVNlY3JldEtleUZvckpXVFQyNTZTaG93blN0cmluZzEyMzQ1Njc4OTA=
+jwt.expiration=3600000
